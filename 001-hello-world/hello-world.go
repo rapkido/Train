@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello TODD thank you for that lesson i will be real prof programmer through you")
+	a, _ := fmt.Println("Hello TODD thank you for that lesson i will be real prof programmer through you")
 	foo()
 	fmt.Println("After foo it's something like this you know")
 	for i := 0; i < 100; i++ {
@@ -12,13 +12,15 @@ func main() {
 		}
 	}
 	bar()
+	fmt.Println(a)
 
 }
 func foo() {
 	fmt.Println("i am in foo")
 }
-func bar(){
+func bar() {
 	fmt.Println("It's end of code")
+
 }
 
 // control flow
