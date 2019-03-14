@@ -1,1 +1,7 @@
-package deneme
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Print("whatsuuuuup")
+}
