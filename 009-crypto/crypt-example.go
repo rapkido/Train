@@ -11,8 +11,7 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}
-	fmt.Println(s)
-	fmt.Println(bs)
+
 	var loginPword1 string
 	fmt.Scan(&loginPword1)
 	err = bcrypt.CompareHashAndPassword(bs, []byte(loginPword1))
