@@ -12,7 +12,6 @@ type user struct {
 	Sayings []string
 }
 
-
 type ByAge []user
 
 func (a ByAge) Len() int           { return len(a) }

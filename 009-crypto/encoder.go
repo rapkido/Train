@@ -57,6 +57,5 @@ func main() {
 	if err != nil {
 		fmt.Println("err")
 	}
-	a:=json.NewEncoder(io.Writer(w))
+	a := json.NewEncoder(io.Writer(w))
 }
-
