@@ -14,8 +14,8 @@ func main() {
 
 	for i := 0; i < gs; i++ {
 		go func() {
-			atomic.AddInt64(&count,1)
-			r:=atomic.LoadInt64(&count)
+			atomic.AddInt64(&count, 1)
+			r := atomic.LoadInt64(&count)
 			fmt.Println(r)
 			wg.Done()
 		}()

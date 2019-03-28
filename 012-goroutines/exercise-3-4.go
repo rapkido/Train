@@ -27,4 +27,5 @@ func main() {
 	wg.Wait()
 	fmt.Println("Final count is: ", count)
 }
+
 //race condition and without it exercise 3-4
