@@ -14,12 +14,12 @@ func main() {
 	fmt.Println("About to exit")
 }
 
-	//send
-	func foo(c chan<- int){
-		c <- 42
-	}
+//send
+func foo(c chan<- int) {
+	c <- 42
+}
 
-	//receive
-	func bar(c <-chan int){
-		fmt.Println(<-c)
-	}
+//receive
+func bar(c <-chan int) {
+	fmt.Println(<-c)
+}

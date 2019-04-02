@@ -7,12 +7,11 @@ import (
 
 func main() {
 	c := make(chan int)
-	go func (){
+	go func() {
 		fmt.Println("Sleeping...")
-		time.Sleep(2*time.Second)
-		c <-42
-			}()
+		time.Sleep(2 * time.Second)
+		c <- 42
+	}()
 
 	fmt.Println(<-c)
 }
-
